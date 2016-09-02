@@ -1,50 +1,148 @@
 <!doctype html>
 <html>
-	<head>
-		<meta charset="utf-8">
-		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
 
-		<title>reveal.js</title>
+        <title>reveal.js</title>
 
-		<link rel="stylesheet" href="css/reveal.css">
-		<link rel="stylesheet" href="css/theme/black.css">
+        <link rel="stylesheet" href="css/reveal.css">
+        <link rel="stylesheet" href="css/theme/beige.css">
 
-		<!-- Theme used for syntax highlighting of code -->
-		<link rel="stylesheet" href="lib/css/zenburn.css">
+        <!-- Theme used for syntax highlighting of code -->
+        <link rel="stylesheet" href="lib/css/zenburn.css">
 
-		<!-- Printing and PDF exports -->
-		<script>
-			var link = document.createElement( 'link' );
-			link.rel = 'stylesheet';
-			link.type = 'text/css';
-			link.href = window.location.search.match( /print-pdf/gi ) ? 'css/print/pdf.css' : 'css/print/paper.css';
-			document.getElementsByTagName( 'head' )[0].appendChild( link );
-		</script>
-	</head>
-	<body>
-		<div class="reveal">
-			<div class="slides">
-				<section>Slide 1</section>
-				<section>Slide 2</section>
-			</div>
-		</div>
+        <!-- Printing and PDF exports -->
+        <script>
+            var link = document.createElement( 'link' );
+            link.rel = 'stylesheet';
+            link.type = 'text/css';
+            link.href = window.location.search.match( /print-pdf/gi ) ? 'css/print/pdf.css' : 'css/print/paper.css';
+            document.getElementsByTagName( 'head' )[0].appendChild( link );
+        </script>
+    </head>
+    <body>
+        <div class="reveal">
+            <div class="slides">
+                <section data-markdown>
+                    <script type="text/template">
+                        ## Hello Git!
 
-		<script src="lib/js/head.min.js"></script>
-		<script src="js/reveal.js"></script>
+                        
+                        <p class="fragment fade-up">
+                            Criado por: <br/>
+                            <a href="https://github.com/lucasaciole"><img src="https://avatars2.githubusercontent.com/u/2916159?v=3&s=460" height="80" alt="Lucas Yuji. S Aciole"/></a>
+                        </p>
+                    </script>
+                </section>
+                <section>
+                    <section data-markdown>
+                        <script type="text/template">
+                            ## O que é Git?
+                            
+                            - Sistema de Controle de Versão (VCS)<!-- ..element: class="fragment fade-right" fragment-index="1" -->
+                            - Distribuido <!-- ..element: class="fragment fade-right" fragment-index="2" -->
+                        </script>
+                    </section>                    
+                    <section data-markdown>
+                        <script type="text/template">
+                            ## Controle de Versão
 
-		<script>
-			// More info https://github.com/hakimel/reveal.js#configuration
-			Reveal.initialize({
-				history: true,
+                            <div style="position:relative; width:640px; height:480px; margin:0 auto;">
+                              <img class="fragment fade-out" width="640" height="480" src="https://git-scm.com/figures/18333fig0101-tn.png" style="position:absolute;top:0;left:0;" data-fragment-index="0" />
+                              <img class="fragment fade-in" width="640" height="480" src="img/vcs_example2.png" style="position:absolute;top:0;left:0;" data-fragment-index="1" />
+                            </div>
+                        </script>
+                    </section>
+                    <section data-markdown>
+                        <script type="text/template">
+                            ## VCS Distribuido
 
-				// More info https://github.com/hakimel/reveal.js#dependencies
-				dependencies: [
-					{ src: 'plugin/markdown/marked.js' },
-					{ src: 'plugin/markdown/markdown.js' },
-					{ src: 'plugin/notes/notes.js', async: true },
-					{ src: 'plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } }
-				]
-			});
-		</script>
-	</body>
+                            <img src="https://git-scm.com/figures/18333fig0103-tn.png" alt="Exemplo VCS Distribuido" />
+
+                            <aside class="notes">
+                                 - Sistemas de Controle de Versão Distribuídos (Distributed Version Control System ou DVCS). <br/>
+                                 - Exemplos: Git, Mercurial, Bazaar ou Darcs; <br/>
+                                 - Os clientes não apenas fazem cópias das últimas versões dos arquivos: eles são cópias completas do repositório; <br/>
+                                 - Se um servidor falha, qualquer um dos repositórios dos clientes pode ser copiado de volta para o servidor para restaurá-lo; <br/>
+                                 - Cada checkout (resgate) é na prática um backup completo de todos os dados.
+                            </aside>
+                        </script>
+                    </section>
+                </section>
+                <section>
+                    <section data-markdown>
+                        <script type="text/template">
+                            ## Usando o Github
+                        </script>
+                    </section>
+                    <section data-markdown>
+                        <script type="text/template">
+                            ## Criando uma conta!
+
+                            <img src="/img/github.png" alt="Página Inicial do Github" height="500"/>
+                        </script>
+                    </section>
+                    <section data-markdown>
+                        <script type="text/template">
+                            ## Criando um repositório
+                            <img src="https://guides.github.com/activities/hello-world/create-new-repo.png"/>
+                        </script>
+                    </section>
+                    
+              </section>
+                <section>
+                    <section data-markdown>
+                        <script type="text/template">
+                            ## Começando um projeto Git
+                            <img src="/img/git_init.png" alt="Executando o comando git init" height="500"/>
+                        </script>
+                    </section>
+                    <section data-markdown>
+                        <script type="text/template">
+                            ## Ou...
+                            <img src="/img/git_clone.png" alt="Executando o comando git clone" height="500"/>
+                        </script>
+                    </section>
+                </section>
+                <section data-markdown>
+                        <script type="text/template">
+                            ## Referências
+                            
+                            [ProGIT](https://git-scm.com/">https://git-scm.com/)
+                            |
+                            [Github](http://github.com/ "Github")
+                            |
+                            [Chris Beans](http://chris.beams.io/posts/git-commit/)
+                            |
+                            [Seth Robertson](https://sethrobertson.github.io/GitBestPractices/)
+                            |
+                            [Alex Kras](http://www.alexkras.com/19-git-tips-for-everyday-use)
+                        </script>
+                </section>
+            </div>
+        </div>
+
+
+        <script src="lib/js/head.min.js"></script>
+        <script src="js/reveal.js"></script>
+
+        <script>
+            // More info https://github.com/hakimel/reveal.js#configuration
+            Reveal.initialize({
+                controls: false,
+                history: true,
+                margin: 0.1,
+
+
+                // More info https://github.com/hakimel/reveal.js#dependencies
+                dependencies: [
+                    { src: 'plugin/markdown/marked.js' },
+                    { src: 'plugin/markdown/markdown.js' },
+                    { src: 'plugin/notes/notes.js', async: true },
+                    { src: 'plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } }
+                ]
+            });
+        </script>
+    </body>
 </html>
