@@ -127,6 +127,43 @@
                 <section>
                     <section data-markdown>
                         <script type="text/template">
+                            ## Configurando o Git
+
+                            ```bash
+                                $ git config --global user.name "John Doe"
+                                $ git config --global user.email johndoe@example.com
+                            ```
+                        </script>
+                    </section>
+                    <section data-markdown>
+                        <script type="text/template">
+                            ## Configurações diferentes
+
+                            Sistema
+                            ```bash
+                                $ git config --system --list
+                                # /etc/gifconfig
+                                # C:\ProgramData\Git\config no Windows Vista pra cima
+                            ```
+
+                            Usuário
+                            ```bash
+                                $ git config --global --list
+                                # ~/.gitconfig ou em $HOME/ no Windows,
+                                # que costuma ser C:\Users\$USER
+                            ```
+
+                            Projeto
+                            ```bash
+                                $ git config --list
+                                # .git/config na pasta do projeto em que você rodou o comando
+                            ```
+                        </script>
+                    </section>    
+                </section>
+                <section>
+                    <section data-markdown>
+                        <script type="text/template">
                             ## Usando o Github
                         </script>
                     </section>
