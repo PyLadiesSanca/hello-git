@@ -450,7 +450,7 @@
                             6. Limite as linhas do corpo até 72 caracteres
                             7. Use o corpo para explicar o que foi feito e porquê vs. como
                         </script>
-                    </section>
+                    </section>                    
                     <section data-markdown>
                         <script type="text/template">
                             ## Uma boa mensagem de commit
@@ -486,6 +486,26 @@
                                 See also: #179, #178
                             ```
 
+                        </script>
+                    </section>
+                </section>
+                <section>
+                    <section data-markdown>
+                        <script type="text/template">
+                            ## Conhecendo comandos (AVANÇADO)
+
+                            ```bash
+                                # Sempre usar pull assim depois que você já fez algum
+                                # commit sem dar pull
+                                $ git pull --rebase
+                                # Por segurança, sempre especificar o REMOTE e a BRANCH
+                                $ git push <remote> <branch>
+                                # Ao mergear uma branch na master, mantenha a estrutura
+                                # daquela branch no histórico. Assim, quando você
+                                # olhar novamente, vai saber que aqueles commits eram
+                                # de uma outra branch que já foi removida por ter sido mergeada
+                                $ git merge --no-ff
+                            ```
                         </script>
                     </section>
                 </section>
