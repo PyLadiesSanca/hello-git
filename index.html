@@ -223,9 +223,43 @@
                         <script type="text/template">
                             ## Estados de um arquivo
 
-                            - Staged for commit
-                            - Not Staged for commit
                             - Untracked
+                            - Not Staged for Commit
+                            - Staged for Commit
+                        </script>
+                    </section>
+                    <section data-markdown>
+                        <script type="text/template">
+                            Untracked
+
+                            ```bash
+                                # Vamos criar um arquivo novo, vazio
+                                $ touch new_file.txt
+                            ```
+
+                            <img src="img/git_untracked.png" alt="Exemplo de um arquivo untracked no git status" height="500" />
+                        </script>
+                    </section>
+                    <section data-markdown>
+                        <script type="text/template">
+                            Not Staged for commit
+
+                            <img src="img/git_not_staged.png" alt="Exemplo de um arquivo not staged no git status" height="500"/>
+                        </script>
+                    </section>
+                    <section data-markdown>
+                        <script type="text/template">
+                            Staged for commit
+
+                            ```bash
+                                $ git add README.md
+                            ```
+
+                            <img src="img/git_staged.png" alt="Exemplo de um arquivo staged no git status" height="500"/>
+                        </script>
+                    </section>
+                </section>
+                <section>
                         </script>
                     </section>
                 </section>
