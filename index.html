@@ -260,6 +260,205 @@
                     </section>
                 </section>
                 <section>
+                    <section data-markdown>
+                        <script type="text/template">
+                            ## Criando um Commit
+
+                            <img src="img/arvore.png" alt="Exemplo de master antes de um commit"/>
+                        </script>
+                    </section>
+                    <section data-markdown>
+                        <script type="text/template">
+                            Git Commit
+
+                            <img src="img/git_commit.png" alt="Exemplo de master antes de um commit"/>
+                        </script>
+                    </section>
+                    <section data-markdown>
+                        <script type="text/template">
+                            Resultado
+
+                            <img src="img/arvore2.png" alt="Exemplo de master depois de um commit"/>
+                        </script>
+                    </section>
+                </section>
+                <section>
+                    <section data-markdown>
+                        <script type="text/template">
+                            ## Entendendo os Remotes
+
+                            ```bash
+                                # Lista os remotes cadastrados
+                                $ git remote -v
+                                origin  https://github.com/lucasaciole/hello-git-example.git (fetch)
+                                origin  https://github.com/lucasaciole/hello-git-example.git (push)
+                            ```
+                        </script>
+                    </section>
+                    <section data-markdown>
+                        <script type="text/template">
+                            ## Cadastrando um Remote
+
+                            ```bash
+                                # Cria um novo remote
+                                $ git remote add <nome> <URI>
+                                # Lista os remotes cadastrados
+                                $ git remote -v
+                                origin  https://github.com/lucasaciole/hello-git-example.git (fetch)
+                                origin  https://github.com/lucasaciole/hello-git-example.git (push)
+                                <nome> <URI> (fetch)
+                                <nome> <URI> (push)
+                            ```
+                        </script>
+                    </section>
+                </section>
+                <section>
+                    <section data-markdown>
+                        <script type="text/template">
+                            ## Enviando para o servidor
+
+                            <img src="img/arvore2.png" alt="Exemplo de master depois de um commit"/>
+                            <img src="img/github1.png" alt="Pagina do repositório no Github antes do push"/>
+                        </script>
+                    </section>
+                    <section data-markdown>
+                        <script type="text/template">
+                            Git push (HTTPS)
+
+                            <img src="img/git_push.png" alt="Exemplo de um comando git push" height="500"/>
+                        </script>
+                    </section>
+                    <section data-markdown>
+                        <script type="text/template">
+                            Resultado
+
+                            <img src="img/arvore3.png" alt="Exemplo de master depois de um commit"/>
+                            <img src="img/github2.png" alt="Pagina do repositório no Github antes do push"/>
+                        </script>
+                    </section>
+                </section>
+                </section>
+                <section>
+                    <section data-markdown>
+                        <script type="text/template">
+                            ## Git Branchs
+
+                            <img src="img/git_branches.png" alt="Exemplo de duas branches no repositório"/>
+                        </script>
+                    </section>
+                    <section data-markdown>
+                        <script type="text/template">
+                            Criando uma branch
+
+                            <img src="img/git_branch.png" alt="Pagina do repositório no Github antes do push"/>
+                        </script>
+                    </section>
+                    <section data-markdown>
+                        <script type="text/template">
+                            Criando + Navegando para a branch
+
+                            <img src="img/git_checkout.png" alt="Pagina do repositório no Github antes do push"/>
+                        </script>
+                    </section>
+                </section>
+                <section>
+                    <section data-markdown>
+                        <script type="text/template">
+                            ## Entrando em detalhes
+
+                            Um arquivo Staged e Not Staged ao mesmo tempo
+
+                            <div style="position:relative; width:640px; height:480px; margin:0 auto;">
+                              <img class="fragment fade-out" width="640" height="126" src="img/readme_edit.png" style="position:absolute;top:0;left:0;" data-fragment-index="0" />
+                              <img class="fragment fade-in" width="640" height="480" src="img/git_status4.png" style="position:absolute;top:0;left:0;" data-fragment-index="1" />
+                            </div>
+                        </script>
+                    </section>
+                    <section data-markdown>
+                        <script type="text/template">
+                            ## Entrando em detalhes
+
+                            Um arquivo Staged e Not Staged ao mesmo tempo
+
+                            <div style="position:relative; width:640px; height:480px; margin:0 auto;">
+                              <img class="fragment fade-out" width="640" height="164" src="img/readme_edit2.png" style="position:absolute;top:0;left:0;" data-fragment-index="0" />
+                              <img class="fragment fade-in" width="640" height="480" src="img/git_status5.png" style="position:absolute;top:0;left:0;" data-fragment-index="1" />
+                            </div>
+                        </script>
+                    </section>
+                </section>
+                <section>
+                    <section data-markdown>
+                        <script type="text/template">
+                            ## Entrando em detalhes
+
+                            Git Log
+                            ```bash
+                                $ git log
+                            ```
+
+                            <img src="img/git_log.png" alt="Exemplo do comando git log" />
+                        </script>
+                    </section>
+                </section>
+                <section>
+                    <section data-markdown>
+                        <script type="text/template">
+                            ## Cuidando bem do seu repositório
+
+                            1. Commitar com frequência
+                            2. Commitar alterações em pequenas partes
+                            3. Escrever bons commits      
+                        </script>
+                    </section>
+                    <section data-markdown>
+                        <script type="text/template">
+                            ## Regras de ouro para uma boa mensagem de commit
+
+                            1. Separar "corpo" do "assunto" por uma linha em branco
+                            2. Limitar o "assunto" até 50 caracteres
+                            3. Capitalizar o assunto
+                            4. Não termine o assunto com ponto final
+                            5. Use o imperativo no assunto
+                            6. Limite as linhas do corpo até 72 caracteres
+                            7. Use o corpo para explicar o que foi feito e porquê vs. como
+                        </script>
+                    </section>
+                    <section data-markdown>
+                        <script type="text/template">
+                            ## Uma boa mensagem de commit
+
+                            ```markdown
+                                Resuma as mudanças no "assunto" em até 50 caracteres
+
+                                Pulando uma linha, comece o "corpo" do commit explicando mais 
+                                detalhadamente o que ele faz, SE NECESSÁRIO. Pule a linha toda
+                                vez que ela chegar em torno dos 72 caracteres.
+
+                                Explique o problema que você está resolvendo, tentando se 
+                                concentrar mais no motivo do que em como você o resolveu
+                                (o código já cuida dessa parte).
+
+                                O corpo do commit pode ser extendido em vários parágrafos,
+                                inclusive utilizando listas:
+                                    - Normalmente os pontos de uma lista são representados
+                                      por um hífen ou;
+                                    * um asterisco;
+
+                                Note como até mesmo nesse exemplo o fato de eu limitar as
+                                linhas do corpo em 72 caracteres tornam a leitura muito mais
+                                fácil.
+
+                                Para terminar, coloque no final do corpo uma assinatura sua
+                                para que projetos mais exigentes aceitem seus commits.
+                                Você também pode colocar referências a pull requests ou issues
+                                do Github:
+
+                                Signed-off by: Author <autor.email@path.to.email>
+                                Fixes: #1 
+                                See also: #179, #178
+                            ```
+
                         </script>
                     </section>
                 </section>
@@ -272,12 +471,13 @@
                             [Github](http://github.com/ "Github")
                             |
                             [Chris Beans](http://chris.beams.io/posts/git-commit/)
-                            |
+                            <br />
                             [Seth Robertson](https://sethrobertson.github.io/GitBestPractices/)
                             |
                             [Alex Kras](http://www.alexkras.com/19-git-tips-for-everyday-use)
                             |
                             [Atlassian](https://www.atlassian.com/git/tutorials/install-git/mac-os-x)
+
                         </script>
                 </section>
             </div>
