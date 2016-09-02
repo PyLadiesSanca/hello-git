@@ -31,7 +31,14 @@
                         
                         <p class="fragment fade-up">
                             Criado por: <br/>
-                            <a href="https://github.com/lucasaciole"><img src="https://avatars2.githubusercontent.com/u/2916159?v=3&s=460" height="80" alt="Lucas Yuji. S Aciole"/></a>
+                            <a href="https://github.com/lucasaciole" 
+                               target="_blank">
+                               <img src="https://avatars2.githubusercontent.com/u/2916159?v=3&s=460" 
+                                    height="80" alt="Lucas Yuji. S Aciole"/>
+                                <span style="position:relative; bottom:20px">
+                                    @lucasaciole
+                                </span>
+                            </a>
                         </p>
                     </script>
                 </section>
@@ -69,6 +76,49 @@
                             </aside>
                         </script>
                     </section>
+                </section>
+                <section>
+                    <section data-markdown>
+                        <script type="text/template">
+                            ## Instalando o GIT
+                        </script>
+                    </section>
+                    <section data-markdown>
+                        <script type="text/template">
+                            ## No Windows
+
+                            [Pelo site do Git](https://git-scm.com/downloads)
+                            <br />
+                            <img src="img/dwl_git_windows.png" alt="Página de Dowload do Git" height="500"/>
+                        </script>
+                    </section>
+                    <section data-markdown>
+                        <script type="text/template">
+                            ## No Linux
+                            <pre><code class="bash">    $ sudo apt-get update
+                                $ sudo apt-get install git
+                            </code></pre>
+                        </script>
+                    </section>
+                    <section data-markdown>
+                        <script type="text/template">
+                            ## No Mac OSX
+
+                            Geralmente já vem instalado
+                            <pre><code class="bash">    $ git --version 
+                                git version 2.9.2
+                            </code></pre>
+                            Voce pode usar o Homebrew                                
+                            <pre><code class="bash">    $ brew install git
+                            </code></pre>
+                            Ou o MacPorts
+                            <pre><code class="bash">    $ port search git 
+                                $ port variants git
+                                $ sudo port install git +bash_completion+credential_osxkeychain+doc
+                            </code></pre>
+                        </script>
+                    </section>
+                    
                 </section>
                 <section>
                     <section data-markdown>
@@ -118,6 +168,8 @@
                             [Seth Robertson](https://sethrobertson.github.io/GitBestPractices/)
                             |
                             [Alex Kras](http://www.alexkras.com/19-git-tips-for-everyday-use)
+                            |
+                            [Atlassian](https://www.atlassian.com/git/tutorials/install-git/mac-os-x)
                         </script>
                 </section>
             </div>
